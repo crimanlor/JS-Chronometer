@@ -7,4 +7,4 @@ Represents the structure and functionality of the `Chronometer` class.
 
 ## Demo
 
-[Click here to try out the chronometer live!](https://easy-calc-js.netlify.app/)
+[Click here to try out the chronometer live!](https://js-time-tracker.netlify.app/)
