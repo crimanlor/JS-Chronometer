@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Chronometer</title>
+</head>
+<body style="text-align: center; padding-top: 150px;">
+    <h1 id="time">00:00:00</h1>
+    <button type="button" class="btn btn-danger" data-start>Start</button>
+    <button type="button" class="btn btn-info" data-record>Record</button>
+    <button type="button" class="btn btn-warning" data-stop>Stop</button>
+    <div id="regicords" class="pt-2">
+        <h2>Records</h2>
+        <ul id="records-list" class="list-group"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
