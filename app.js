@@ -23,7 +23,7 @@ class Chronometer {
         const minutes = now.getMinutes().toString().padStart(2, "0");
         const seconds = now.getSeconds().toString().padStart(2, "0");
         this.time = `${hours}:${minutes}:${seconds}`;
-        document.getElementById("time").innerText = this.time;
+        document.getElementById("chronometer-interfaz").innerText = this.time;
     }
 
     record() {
