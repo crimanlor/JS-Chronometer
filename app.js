@@ -6,6 +6,7 @@ class Chronometer {
 
     start() {
         if (!this.intervalId) {
+            this.totalSeconds = 0
             this.intervalId = setInterval(() => { this.startClock() }, 1000)
         }
     }
@@ -18,10 +19,10 @@ class Chronometer {
     }
 
     startClock() {
-        const now = new Date();
-        const hours = now.getHours().toString().padStart(2, "0");
-        const minutes = now.getMinutes().toString().padStart(2, "0");
-        const seconds = now.getSeconds().toString().padStart(2, "0");
+        this.totalSeconds++
+        const hours = Math.floor(this.totalSeconds / 3600).toString().padStart(2, "0");
+        const minutes = Math.floor((this.totalSeconds % 3600) / 60).toString().padStart(2, "0");
+        const seconds = (this.totalSeconds % 60).toString().padStart(2, "0");
         this.time = `${hours}:${minutes}:${seconds}`;
         document.getElementById("chronometer-interfaz").innerText = this.time;
     }
